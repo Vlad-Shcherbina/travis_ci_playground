@@ -4,7 +4,8 @@ python:
   - "3.4"
   - "nightly"
   - "pypy"
-  - "pypy3"
+  #- "pypy3"  # numpy does not work with pypy3
+  
 install:
   - "pip install -r requirements.txt"
   - |
