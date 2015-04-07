@@ -4,6 +4,13 @@ import sys
 import nose
 
 
+N = 42
+
+
+def example_test():
+    pass
+
+
 if __name__ == '__main__':
     print(sys.version)
     argv = sys.argv + [
