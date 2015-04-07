@@ -8,6 +8,7 @@ python:
 install:
   - "pip install -r requirements.txt"
   - |
+    # Install interpreter-specific requirements.
     if [[ `python --version 2>&1` =~ .*PyPy.* ]]; then
       pip install -r requirements_pypy.txt
     else
