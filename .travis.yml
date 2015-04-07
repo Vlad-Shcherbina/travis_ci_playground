@@ -7,4 +7,9 @@ python:
   - "pypy3"
 install:
   - "pip install -r requirements.txt"
+  - |
+    if [[ `pypy --version 2>&1` =~ .*PyPy.* ]]; then
+      pip install git+https://bitbucket.org/pypy/numpy.git
+    fi
+
 script: python test_all.py
