@@ -4,6 +4,7 @@ import logging
 
 import nose
 from hypothesis import given, assume
+import numpy
 
 N = 41
 
@@ -21,6 +22,12 @@ def test_square_is_even(x):
 
 def test_skipped():
     raise nose.SkipTest('zzz')
+    
+    
+def test_numpy():
+    xs = numpy.array([0, 10, 0, 20, 0])
+    nz, = xs.nonzero()
+    assert numpy.array_equal(nz, numpy.array([1, 3]))
     
 
 if __name__ == '__main__':
