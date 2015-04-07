@@ -8,7 +8,7 @@ python:
 install:
   - "pip install -r requirements.txt"
   - |
-    if [[ `pypy --version 2>&1` =~ .*PyPy.* ]]; then
+    if [[ `python --version 2>&1` =~ .*PyPy.* ]]; then
       pip install git+https://bitbucket.org/pypy/numpy.git
     fi
 
