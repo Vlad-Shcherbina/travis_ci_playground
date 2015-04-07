@@ -14,15 +14,10 @@ def example_test():
 
 @given(int)
 def test_square_is_even(x):
-    assume(x % 2 == 0 or x == 7)
+    assume(x % 2 == 0)
     logging.info('x = {}'.format(x))
     assert x ** 2 % 2 == 0, x
     
-    
-def test_failing():
-    logging.info('hello')
-    assert False
-
 
 if __name__ == '__main__':
     print(sys.version)
