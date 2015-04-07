@@ -4,6 +4,5 @@ python:
   - "3.4"
   - "nightly"
 install:
-  - echo 'hello world from install'
-#  - "pip install -r requirements.txt"
+  - "pip install -r requirements.txt"
 script: python test_all.py
