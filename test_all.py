@@ -4,7 +4,7 @@ import sys
 import nose
 
 
-N = 42
+N = 41
 
 
 def example_test():
