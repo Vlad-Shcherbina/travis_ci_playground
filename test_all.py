@@ -2,6 +2,7 @@ from __future__ import print_function
 import sys
 
 import nose
+from hypothesis import given, assume
 
 
 N = 41
@@ -9,6 +10,11 @@ N = 41
 
 def example_test():
     pass
+
+
+@given(int)
+def square_is_even(x):
+    assert x ** 2 % 2 == 0, x
 
 
 if __name__ == '__main__':
