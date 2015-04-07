@@ -1,0 +1,9 @@
+language: python
+python:
+  - "2.7"
+  - "3.4"
+  - "nightly"
+install:
+  - echo 'hello world from install'
+#  - "pip install -r requirements.txt"
+script: echo 'hello world from script'
