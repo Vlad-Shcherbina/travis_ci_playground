@@ -13,7 +13,7 @@ def example_test():
 
 
 @given(int)
-def square_is_even(x):
+def test_square_is_even(x):
     assert x ** 2 % 2 == 0, x
 
 
