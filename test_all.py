@@ -14,7 +14,7 @@ def example_test():
 
 @given(int)
 def test_square_is_even(x):
-    assume(False)
+    assume(x == -2)
     assert x ** 2 % 2 == 0, x
 
 
