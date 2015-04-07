@@ -8,7 +8,7 @@ N = 42
 
 
 def example_test():
-    pass
+    assert N % 2 == 0
 
 
 if __name__ == '__main__':
