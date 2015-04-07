@@ -4,7 +4,7 @@ import nose
 
 
 if __name__ == '__main__':
-    print sys.version
+    print(sys.version)
     argv = sys.argv + [
         '--verbose', '--with-doctest',
         '--logging-level=DEBUG',
