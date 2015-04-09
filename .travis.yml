@@ -15,7 +15,6 @@ install:
     else
       pip install -r requirements_cpython.txt
     fi
+  - swig -version
 
-script: |
-  python test_all.py
-  swig
+script: python test_all.py
