@@ -47,5 +47,6 @@ if __name__ == '__main__':
         '--verbose', '--with-doctest',
         '--logging-level=DEBUG',
         '--rednose',
+        '--exclude-dir=cpp',
         ]
     nose.run_exit(argv=argv)
