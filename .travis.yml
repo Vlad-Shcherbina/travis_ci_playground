@@ -17,3 +17,6 @@ install:
     fi
 
 script: python test_all.py
+
+after_success:
+  - false  # check if Travis reports failures in after_success
