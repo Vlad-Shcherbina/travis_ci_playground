@@ -13,11 +13,11 @@ def example_test():
     pass
 
 
-@given(int)
-def test_square_is_even(x):
-    assume(x % 2 == 0)
-    logging.info('x = {}'.format(x))
-    assert x ** 2 % 2 == 0, x
+# @given(int)
+# def test_square_is_even(x):
+#     assume(x % 2 == 0)
+#     logging.info('x = {}'.format(x))
+#     assert x ** 2 % 2 == 0, x
 
 
 def test_skipped():
